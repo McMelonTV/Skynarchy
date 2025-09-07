@@ -29,7 +29,7 @@ import java.util.Optional;
 
 @Mixin(VaultBlock.class)
 public class MixinVaultBlock {
-    @Inject(method = "useItemOn", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "useItemOn", at = @At("HEAD"))
     public void useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> cir) {
         VaultBlockEntity vault = (VaultBlockEntity) level.getBlockEntity(pos);
         if (vault == null) return;
@@ -55,6 +55,6 @@ public class MixinVaultBlock {
             Skynarchy.LOGGER.error(e.getMessage());
         }
 
-        cir.cancel();
+        cir.setReturnValue(InteractionResult.SUCCESS);
     }
 }
