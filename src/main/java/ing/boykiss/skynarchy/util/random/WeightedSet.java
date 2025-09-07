@@ -22,6 +22,17 @@ public class WeightedSet<T> {
         entries.add(new ThresholdEntry<>(entry.item(), totalCount));
     }
 
+    public boolean exists(T o) {
+        for (ThresholdEntry<T> entry : entries) {
+            if (o.equals(entry.item)) return true;
+        }
+        return false;
+    }
+
+    public boolean isEmpty() {
+        return entries.isEmpty();
+    }
+
     public Optional<T> randomEntry(Random random) {
         if (totalCount == 0) {
             return Optional.empty();
