@@ -1,0 +1,8 @@
+accessWidener v2 named
+
+accessible method net/minecraft/world/level/block/entity/vault/VaultServerData hasRewardedPlayer (Lnet/minecraft/world/entity/player/Player;)Z
+accessible method net/minecraft/world/level/block/entity/vault/VaultBlockEntity$Server playInsertFailSound (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/block/entity/vault/VaultServerData;Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;)V
+accessible method net/minecraft/world/level/block/entity/vault/VaultBlockEntity$Server unlock (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/vault/VaultConfig;Lnet/minecraft/world/level/block/entity/vault/VaultServerData;Lnet/minecraft/world/level/block/entity/vault/VaultSharedData;Ljava/util/List;)V
+accessible method net/minecraft/world/level/block/entity/vault/VaultSharedData updateConnectedPlayersWithinRange (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/vault/VaultServerData;Lnet/minecraft/world/level/block/entity/vault/VaultConfig;D)V
+accessible field net/minecraft/world/level/block/entity/vault/VaultServerData rewardedPlayers Ljava/util/Set;
+accessible method net/minecraft/world/level/block/entity/vault/VaultServerData markChanged ()V

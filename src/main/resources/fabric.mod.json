@@ -9,6 +9,7 @@
   "license": "All-Rights-Reserved",
   "icon": "assets/skynarchy/icon.png",
   "environment": "server",
+  "accessWidener": "skynarchy.accesswidener",
   "entrypoints": {
     "main": [
       "ing.boykiss.skynarchy.Skynarchy"

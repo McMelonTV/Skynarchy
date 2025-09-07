@@ -6,7 +6,8 @@
   "mixins": [
     "MixinEndCityPiece",
     "MixinNoiseBasedChunkGenerator",
-    "MixinServerPlayer"
+    "MixinServerPlayer",
+    "MixinVaultBlock"
   ],
   "client": [
   ],
