@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ing.boykiss.skynarchy.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinEndCityPiece",
+    "MixinNoiseBasedChunkGenerator",
+    "MixinServerPlayer"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
