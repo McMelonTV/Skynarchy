@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "skynarchy",
+  "version": "${version}",
+  "name": "Skynarchy",
+  "description": "The server-side core mod of Skynarchy, an anarchy Skyblock server.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skynarchy/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "ing.boykiss.skynarchy.Skynarchy"
+    ]
+  },
+  "mixins": [
+    "skynarchy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
